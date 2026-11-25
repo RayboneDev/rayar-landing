@@ -1,0 +1,6 @@
+{
+  "name": "راینا | نمایشگر هوشمند چوبی نه بیتکس",
+  "description": "صفحه معرفی رسمی نمایشگر هوشمند رومیزی راینا از نه بیتکس — ترکیب گرمای چوب طبیعی و فناوری مدرن برای خانه و کسب‌وکار.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-canvas: #F3EDE2;
+    --bg-surface: #EAE2D3;
+    --bg-surface-elevated: #E3D9C7;
+    --border-hairline: #D3C6B0;
+    --text-primary: #1E2822;
+    --text-secondary: #4D5A52;
+    --text-muted: #6C766E;
+    --accent-primary: #1D5C42;
+    --accent-primary-hover: #174934;
+    --accent-primary-fg: #F5EFE4;
+    --accent-wood: #9B6434;
+    --accent-wood-soft: #E7D6C2;
+  }
+
+  .dark {
+    --bg-canvas: #0E1F18;
+    --bg-surface: #152B22;
+    --bg-surface-elevated: #1B352A;
+    --border-hairline: #28493B;
+    --text-primary: #EFE9DC;
+    --text-secondary: #C5D1C8;
+    --text-muted: #93A79B;
+    --accent-primary: #4EB385;
+    --accent-primary-hover: #62C497;
+    --accent-primary-fg: #0D1C16;
+    --accent-wood: #D59A62;
+    --accent-wood-soft: #263D32;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: "Vazirmatn", system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    transition: background-color 200ms cubic-bezier(0.16, 1, 0.3, 1), color 200ms cubic-bezier(0.16, 1, 0.3, 1);
+    overflow-x: hidden;
+  }
+}
+
+.font-mono-tabular {
+  font-family: "IBM Plex Mono", "Vazirmatn", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums-fa {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance-title {
+  text-wrap: balance;
+}

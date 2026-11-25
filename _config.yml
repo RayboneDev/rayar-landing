@@ -1,0 +1,16 @@
+title: Rayna
+email: hello@rayna.example
+description: Rayna landing page
+baseurl: ""
+url: "https://yourdomain.com"
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - vendor

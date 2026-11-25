@@ -3,6 +3,7 @@ name: Deploy Vite app to GitHub Pages
 on:
   push:
     branches:
+      - master
       - main
       - design/v1-design
   workflow_dispatch:

@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Typography */
+  --font-sans: "Vazirmatn", system-ui, -apple-system, sans-serif;
+  --font-brand: "Outfit", "Vazirmatn", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Warm Linen Light Mode Palette (گرم کتان) */
+  --color-linen-canvas: #F5F0E6;
+  --color-linen-surface: #FCF9F3;
+  --color-linen-muted: #EAE2D3;
+  --color-linen-border: #DDD3C1;
+  --color-ink-primary: #1D241E;
+  --color-ink-secondary: #535C54;
+  --color-forest-accent: #1B4332;
+  --color-forest-accent-hover: #143326;
+  --color-brass-subtle: #8C6F3E;
+
+  /* Deep Forest Green Dark Mode Palette (سبز تیره) */
+  --color-forest-canvas: #0B1A13;
+  --color-forest-surface: #12261D;
+  --color-forest-elevated: #183226;
+  --color-forest-border: #244234;
+  --color-cream-ink: #F2ECE0;
+  --color-cream-muted: #A4B5AA;
+  --color-sage-accent: #6BBF93;
+  --color-linen-cta: #E6DCC8;
+  --color-linen-cta-hover: #F5F0E6;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+    letter-spacing: 0.005em;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  /* Tabular numerals for clocks, timers, metrics, and spec tables */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes rayna-breathe {
+  0%, 100% {
+    transform: scale(0.86);
+    opacity: 0.72;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+}
+
+.animate-rayna-breathe {
+  animation: rayna-breathe 8s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-rayna-breathe {
+    animation: none;
+  }
+}

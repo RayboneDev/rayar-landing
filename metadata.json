@@ -1,0 +1,6 @@
+{
+  "name": "RAYNA | خانواده محصولات هوشمند رومیزی راینا",
+  "description": "یک همراه هوشمند، برای هر لحظه — گجت‌های هوشمند رومیزی راینا با نمایشگر اختصاصی ۲.۴، ۲.۸ و ۴ اینچی برای خانه، میز کار و کسب‌وکار.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

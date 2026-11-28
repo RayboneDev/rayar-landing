@@ -148,7 +148,7 @@ export function ExperienceAndAiSection() {
 
             <div className="lg:col-span-5">
               <RaynaMediaFrame
-                imageName="img7.png"
+                imageName="img1.png"
                 alt="نسخه پیشرفته ۴ اینچی راینا مجهز به هوش مصنوعی، میکروفون و بلندگوی اختصاصی"
                 caption="نسخه ۴ اینچی با میکروفون، بلندگو و هوش مصنوعی"
                 chapterCode="۰۷ · 4-INCH AI"

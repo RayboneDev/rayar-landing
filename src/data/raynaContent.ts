@@ -90,7 +90,7 @@ export const RAYNA_MODELS: RaynaModel[] = [
     shortSummary: 'بیشترین فضای نمایش به همراه قابلیت‌های هوش مصنوعی و تعامل صوتی.',
     features:
       'بیشترین فضای نمایش به همراه قابلیت‌های هوش مصنوعی و تعامل صوتی (میکروفون و بلندگو منحصراً در این نسخه ارائه می‌شوند).',
-    hasVoiceAi: true,
+    hasVoiceAi: false,
     screenScale: { widthPx: 272, heightPx: 196 },
     highlights: [
       'مجهز به میکروفون و بلندگوی اختصاصی (منحصراً در نسخه ۴ اینچی)',
